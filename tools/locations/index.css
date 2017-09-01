@@ -1,0 +1,84 @@
+/*
+Color Palette (Pastel)
+    purple: #C6ACC7
+    red: #ECB4BF
+    orange: #FBD7B7
+    yellow: #FDF3B8
+    blue: #C2E3EC
+*/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Muli', sans-serif;
+    font-size: 32px;
+    margin: 0 0 6px 0;
+}
+h3 {
+    font-family: 'Muli', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 16px;
+    margin: 0;
+}
+p {
+    font-size: 14px;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+#outer {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#locationEditor {
+    padding-right: 10px;
+    position: absolute;
+    bottom: 30;
+    right: 20;
+    min-width: 400px;
+    min-height: 200px;
+    z-index: 314159;
+    font-size: 18px;
+    background-color: #FFF;
+    text-align: right;
+}
+#leEditCoords {
+    width: 150px;
+}
+
+#saveAll {
+    position: absolute;
+    bottom: 30;
+    left: 20;
+    z-index: 314159;
+    font-size: 18px;
+    text-align: center;
+}
+
+#main {
+    height: 100%;
+    transition: margin-left 0.5s;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.leaflet-container.crosshair-cursor-enabled {
+    cursor: crosshair;
+}
