@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+        <title>Campus Map</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- DEBUG LOGGING -->
+        <!-- <script src="debug-log.js"></script> -->
+        <!-- - - - - - - - -->
+
+        <!-- Leaflet JS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+            integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
+            crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
+            integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
+            crossorigin=""></script>
+        <!-- - - - - - - -->
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro|Muli|Open+Sans" rel="stylesheet">
+        <!-- - - - -->
+
+        <link rel="stylesheet" href="index.css"/>
+        
+        <!-- Markdown parser : https://github.com/showdownjs/showdown -->
+        <script src="https://cdn.rawgit.com/showdownjs/showdown/1.7.2/dist/showdown.min.js"></script>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+        <!-- Loads additional mobile/desktop specific CSS and JS files. -->
+        <script src="responsive.js"></script>
+        <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+        <script src="load_data.js"></script>
+        <script src="map.js"></script>
+    </head>
+    <body>
+        <div id="outer">
+            <!-- Desktop version: sidebar -->
+            <div data-simplebar id="sidebar" class="desktop">
+                <div id="bldgInfo">
+                    <img id="bldgImg" src="">
+                    <div id="bldgTitle">
+                        <h1 id="bldgName">No building selected</h1>
+                        <h4 id="bldgSites">No building selected</h4>
+                    </div>
+                </div>
+                <div id="bldgDescription"></div>
+                <!-- Subsites get added here -->
+            </div>
+
+            <!-- Mobile version: bottom pane -->
+            <img id="bldgImg" src="" class="mobile">
+            <div id="bottomPane" class="mobile">
+                <div id="paneUpButton">
+                    <div id="paneUpArrow"></div>
+                </div>
+                <div id="bldgInfo">
+                    <div id="bldgTitle">
+                        <h1 id="bldgName">No building selected</h1>
+                        <h4 id="bldgSites">No building selected</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="infoOverlay" class="mobile">
+                <div id="bldgDescription"></div>
+                <!-- Subsites get added here -->
+            </div>
+            <div id="bottomPaneTip" class="mobile">
+                <div id="bottomPaneTipText">
+                    Tap arrow or swipe up for site details
+                </div>
+                <div id="bottomPaneTipArrow"></div>
+            </div>
+
+            <!-- Map, controls, and overlays -->
+            <div id="main">
+                <!-- Desktop version: toggle sidebar button -->
+                <div id="toggleSidebar" class="desktop">
+                    <button id="toggleSidebarButton">
+                        <div id="toggleSidebarArrow"></div>
+                    </button>
+                    <div id="toggleSidebarTooltip">
+                        Show side panel
+                    </div>
+                </div>
+                <!-- Logo & instruction -->
+                <div id="topleft">
+                    <div id="psLogo">
+                        <a href="https://staging.graftonstudio.com/princeton/visualizations">
+                            <img src="content/images/ps-logo-on-light.png"/>
+                        </a>
+                    </div>
+                    <div id="instruction">
+                        <div id="instructionClose" onclick="this.parentNode.parentNode.removeChild(this.parentNode); return false;">
+                            X
+                        </div>
+                        <div id="instructionText">
+                            Click on a highlighted location to explore<br>
+                            sites related to Princeton & Slavery
+                        </div>
+                    </div>
+                </div>
+                <!-- Map -->
+                <div id="map">
+                </div>
+            </div>
+
+            <!-- Subsite info prototype -->
+            <!-- map.js will delete this and use it as a prototype for subsite info -->
+            <div id="subsitePrototype" class="subsite">
+                <div class="subInfo">
+                    <img style="display:none" class="subImg" src="">
+                    <div class="subTitle">
+                        <h2 class="subName">Subsite Name</h2>
+                    </div>
+                </div>
+                <div class="subDescription">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

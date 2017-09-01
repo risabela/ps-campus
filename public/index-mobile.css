@@ -1,0 +1,152 @@
+body {
+    font-size: 14px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 170%;
+}
+h2 {
+    font-weight: bold;
+    font-size: 140%;
+}
+h4 {
+    font-size: 100%;
+}
+
+#topleft {
+    top: 10px;
+    right: 10px;
+}
+#psLogo {
+    width: 200px;
+    margin: 0 auto;
+}
+#psLogo img {
+    width: 100%;
+}
+#instruction {
+    margin-top: 10px;
+    padding: 6px 8px 6px 8px;
+
+    border-radius: 4px;
+
+    font-size: 80%;
+}
+#instructionClose {
+    margin-top: -14px;
+    margin-right: -14px;
+    border-radius: 20px;
+    padding: 12px 8px;   
+}
+
+div.leaflet-popup-content {
+    margin: 6px 12px 6px 12px;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    font-size: 14px; /* Needs to be absolute */
+}
+
+div.leaflet-control-attribution.leaflet-control {
+    font-size: 8px; /* Needs to be absolute */
+}
+
+/* Mobile-only elements */
+
+#outer {
+    /* Set to visible when bottom pane is pulled up */
+    overflow-y: hidden;
+}
+
+#bldgImg {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    z-index: 314157;
+    vertical-align: top; /* The obscurities of web dev */
+
+    /*transition: top 0.5s;*/
+}
+
+/* Requires CSS3 flexbox support (note: only on mobile devices) */
+#bottomPane {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 314159;
+    vertical-align: top; /* The obscurities of web dev */
+
+    background-color: #E1B39D;
+
+    /*transition: bottom 0.5s;*/
+}
+#bottomPane #paneUpButton {
+    width: 90px; /* correspond to bottomPane height ish */
+    float: left;
+}
+#bottomPane #paneUpButton #paneUpArrow {
+    width: 0;
+    height: 0;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: solid 15px;
+    border-color: transparent transparent #222 transparent;
+}
+
+#infoOverlay {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 314158;
+    vertical-align: top; /* The obscurities of web dev */
+
+    background-color: #FFF;
+
+    /*transition: top 0.5s;*/
+}
+
+#bottomPane #bldgInfo, #infoOverlay .subInfo {
+    width: 100%;
+    text-align: center;
+    color: #222;
+}
+#infoOverlay .subInfo {
+    background-color: #ffc78c;
+}
+#bottomPane #bldgTitle, #infoOverlay .subTitle {
+    padding: 15px 0px 15px 0px;
+}
+#infoOverlay #bldgDescription, #infoOverlay .subDescription {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #222;
+}
+
+#bottomPaneTip {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    z-index: 314159;
+}
+#bottomPaneTipText {
+    padding: 6px 8px 6px 8px;
+    background-color: #FFF;
+    opacity: 0.85;
+    border-radius: 6px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80%;
+    color: #111;
+}
+#bottomPaneTipArrow {
+    width: 0;
+    height: 0;
+    margin-left: 16px;
+    border: solid 12px;
+    border-color: #FFF transparent transparent transparent;
+    opacity: 0.85;
+}

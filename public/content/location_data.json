@@ -1,0 +1,157 @@
+[
+    {
+        "name": "Nassau Hall",
+        "description": "test.txt",
+        "image": "nassau.jpg",
+        "subsites": [
+            {
+                "name": "Civil War Memorial",
+                "description": "test.txt"
+            }
+        ]
+    },
+    {
+        "name": "Burr Hall",
+        "description": "test.txt",
+        "image": "burr.jpg"
+
+    },
+    {
+        "name": "Palmer House",
+        "description": "test.txt"
+    },
+    {
+        "name": "Prospect House",
+        "description": "test.txt"
+    },
+    {
+        "name": "Walter Lowrie House",
+        "description": "test.txt"
+    },
+    {
+        "name": "Dickinson Hall",
+        "description": "test.txt",
+        "image": "dickinson.jpg"
+    },
+    {
+        "name": "Edwards Hall",
+        "description": "test.txt",
+        "image": "edwards.jpg"
+    },
+    {
+        "name": "Madison Hall",
+        "description": "test.txt",
+        "image": "madison.jpg"
+    },
+    {
+        "name": "Stanhope Hall",
+        "description": "test.txt"
+    },
+    {
+        "name": "Witherspoon Hall",
+        "description": "test.txt",
+        "image": "witherspoon.jpg"
+    },
+    {
+        "name": "Dod Hall",
+        "description": "test.txt"
+    },
+    {
+        "name": "Pyne Hall",
+        "description": "test.txt"
+    },
+    {
+        "name": "East Pyne",
+        "description": "test.txt"
+    },
+    {
+        "name": "Maclean House",
+        "description": "test.txt"
+    },
+    {
+        "name": "Joseph Henry House",
+        "description": "test.txt"
+    },
+    {
+        "name": "FitzRandolph Gate",
+        "description": "test.txt"
+    },
+    {
+        "name": "Statue of John Witherspoon",
+        "description": "test.txt"
+    },
+    {
+        "name": "Frist Campus Center",
+        "subsites": [
+            {
+                "name": "Statue of Joseph Henry",
+                "description": "test.txt"
+            }
+        ]
+    },
+    {
+        "name": "Firestone Library",
+        "subsites": [
+            {
+                "name": "Placeholder",
+                "description": "test.txt"
+            }
+        ]
+    },
+    {
+        "name": "University Chapel",
+        "subsites": [
+            {
+                "name": "Placeholder",
+                "description": "test.txt"
+            }
+        ]
+    },
+    {
+        "name": "Clio Hall",
+        "description": "test.txt"
+    },
+    {
+        "name": "Nassau Presbyterian Church",
+        "description": "test.txt"
+    },
+    {
+        "name": "Miller Chapel",
+        "description": "test.txt"
+    },
+    {
+        "name": "Holder Hall",
+        "subsites": [
+            {
+                "name": "(North? South?) Wall"
+            }
+        ]
+    },
+    {
+        "name": "Cuyler Hall",
+        "subsites": [
+            {
+                "name": "Plaque - 3rd Entry"
+            }
+        ]
+    },
+    {
+        "name": "Engineering Quadrangle",
+        "subsites": [
+            {
+                "name": "Inscription over Main Entrance"
+            }
+        ]
+    },
+    {
+        "name": "Whig Hall",
+        "subsites": [
+            {
+                "name": "Bust"
+            },
+            {
+                "name": "Assembly Room - 2nd Floor"
+            }
+        ]
+    }
+]

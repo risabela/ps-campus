@@ -1,0 +1,125 @@
+body {
+    font-size: 14px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 220%;
+}
+h2 {
+    font-weight: bold;
+    font-size: 170%;
+}
+h4 {
+    font-size: 120%;
+}
+
+#topleft {
+    top: 20px;
+    right: 20px;
+}
+#psLogo {
+    width: 350px;
+    margin: 0 auto;
+}
+#psLogo img {
+    width: 100%;
+}
+#instruction {
+    margin-top: 20px;
+    padding: 10px 20px 10px 20px;
+
+    border-radius: 8px;
+
+    font-size: 100%;
+}
+#instructionClose {
+    margin-top: -20px;
+    margin-right: -30px;
+    border-radius: 20px;
+    padding: 12px 8px;   
+}
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    font-size: 14px; /* Needs to be absolute */
+}
+
+div.leaflet-control-attribution.leaflet-control {
+    font-size: 10px; /* Needs to be absolute */
+}
+
+/* Desktop-only elements */
+
+#sidebar {
+    height: 100%;
+    width: 400px;
+    position: absolute;
+    z-index: 314158;
+    top: 0;
+    left: -400px;
+    background-color: #FFF;
+    box-shadow: 2px 0px 4px 0px #666;
+    overflow-x: hidden;
+}
+#sidebar img {
+    width: 100%;
+}
+#sidebar #bldgInfo, #sidebar .subInfo {
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+    color: #222;
+    background-color: #E1B39D;
+}
+#sidebar .subInfo {
+    background-color: #ffc78c;
+}
+#sidebar #bldgTitle, #sidebar .subTitle {
+    padding: 15px 0px 15px 0px;
+}
+#sidebar #bldgDescription, #sidebar .subDescription {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #222;
+}
+
+#toggleSidebar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 314159;
+}
+#toggleSidebarButton {
+    width: 26px;
+    height: 42px;
+    background-color: #E1B39D;
+    box-shadow: 2px 1px 4px 0px #666;
+    border: 0;
+    padding: 0;
+}
+#toggleSidebarButton:focus {
+    outline: 0;
+}
+#toggleSidebarArrow {
+    width: 0;
+    height: 0;
+    margin: 0px 0px 0px 10px;
+    border: solid 6px;
+    border-color: transparent transparent transparent black;
+}
+#toggleSidebarTooltip {
+    margin: 5px 0px 5px 10px;
+    padding: 8px 8px 8px 8px;
+    height: 100%;
+    float: right;
+    visibility: hidden;
+    background-color: #FFF;
+    opacity: 0.85;
+    border-radius: 5px;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80%;
+    color: #111;
+}

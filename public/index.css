@@ -1,0 +1,132 @@
+/*
+Color Palette (Pastel)
+    purple: #C6ACC7
+    red: #ECB4BF
+    orange: #FBD7B7
+    yellow: #FDF3B8
+    blue: #C2E3EC
+*/
+
+h1 {
+    font-family: 'Source Serif Pro', serif;
+    margin: 0;
+}
+h2 {
+    font-family: 'Source Serif Pro', serif;
+    margin: 0;
+}
+h4 {
+    font-family: 'Source Serif Pro', serif;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-weight: normal;
+    margin: 0;
+}
+
+a {
+    color: #0181b2;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+#outer {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#topleft {
+    position: absolute;
+    z-index: 314150;
+}
+#instruction {
+    background-color: #FFF;
+    opacity: 0.85;
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #111;
+}
+/*#instructionClose {
+    font-size: 120%;
+    float: right;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+#instructionClose:hover {
+    font-weight: bold;
+}*/
+
+#instructionClose {
+    float: right;
+    cursor: pointer;
+    background: #FFF;
+    line-height: 0px;    
+}
+#instructionClose:hover {
+    font-weight: bold;
+}
+
+#main {
+    height: 100%;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Overwrite leaflet styles */
+
+/* Leaflet popups (building names) */
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background-color: #FFF;
+    opacity: 0.85;
+
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #111;
+}
+div.leaflet-popup-tip {
+    background-color: #FFF;
+    opacity: 0.95; /* hacky, but doesn't look good otherwise */
+}
+
+/* Zoom controls */
+div.leaflet-control-zoom.leaflet-bar.leaflet-control {
+    border: 0;
+}
+a.leaflet-control-zoom-in, a.leaflet-control-zoom-out {
+    background-color: #FFF;
+    opacity: 0.85;
+    color: #111;
+}
+a.leaflet-control-zoom-in:hover, a.leaflet-control-zoom-out:hover {
+    background-color: #FFF;
+    opacity: 1.0;
+    color: #000;
+}
+
+/* Attribution text (bottom right) */
+div.leaflet-control-attribution.leaflet-control {
+    background-color: #FFF;
+    opacity: 1.0;
+
+    font-family: 'Open Sans', sans-serif;
+    color: #111;
+}
+div.leaflet-control-attribution.leaflet-control a {
+    color: #0181b2;
+}
