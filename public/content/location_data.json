@@ -117,7 +117,8 @@
     },
     {
         "name": "Miller Chapel",
-        "description": "test.txt"
+        "description": "miller.txt",
+        "image": "miller.jpg"
     },
     {
         "name": "Holder Hall",
