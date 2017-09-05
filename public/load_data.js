@@ -32,7 +32,7 @@ function FetchSiteDescription(siteInfo, polygon) {
 
     $.ajax({
         dataType: "text",
-        url: "/content/descriptions/" + siteInfo.description,
+        url: "content/descriptions/" + siteInfo.description,
         success: function(description, textStatus, jqXHR) {
             siteInfo.description = FormatDescription(description);
 
@@ -109,11 +109,11 @@ function CreatePolygons(locationData, coords) {
 function LoadData() {
     $.ajax({
         dataType: "json",
-        url: "/content/location_data.json",
+        url: "content/location_data.json",
         success: function(locationData, textStatus, jqXHR) {
             $.ajax({
                 dataType: "json",
-                url: "/location_coords.json",
+                url: "location_coords.json",
                 success: function(coords, textStatus, jqXHR) {
                     CreatePolygons(locationData, coords);
                 }
